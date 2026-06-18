@@ -1442,6 +1442,14 @@ function Dashboard({ user, onLogout }) {
         </div>
 
         <h2 className="dashboard-title">Cisco Ideathon Prep Dashboard</h2>
+        {/* 🚨 IMPORTANT NOTE SCROLLING BANNER 🚨 */}
+        <a href="/IdeathonFramework.html" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+          <div className="scrolling-banner-container">
+            <div className="scrolling-text">
+              ⭐ IMPORTANT NOTE: Click here to view the Ideathon-Winning Project Framework & High-Impact Case Studies! ⭐
+            </div>
+          </div>
+        </a>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 12, marginBottom: 20 }}>
           {[{ val: "70+", label: "Total Questions", color: "#f8fafc" }, { val: totalAnsweredViewed, label: "Answered/Viewed", color: "#4ade80" }, { val: correct, label: "MCQs Correct", color: "#38bdf8" }, { val: pct + "%", label: "MCQ Accuracy", color: "#f472b6" }].map(({ val, label, color }) => (
