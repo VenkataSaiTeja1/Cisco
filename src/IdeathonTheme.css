@@ -129,3 +129,36 @@ pre.code-block {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(255, 8, 68, 0.6);
 }
+/* Important Note Scrolling Banner */
+.scrolling-banner-container {
+  width: 100%;
+  background: linear-gradient(90deg, #ff0844 0%, #ffb199 100%);
+  padding: 12px 0;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 15px rgba(255, 8, 68, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+}
+.scrolling-banner-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 8, 68, 0.6);
+}
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  color: #fff;
+  font-weight: 800;
+  font-size: 14.5px;
+  letter-spacing: 0.5px;
+  animation: scrollLeft 18s linear infinite;
+  padding-left: 100%;
+}
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
