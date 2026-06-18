@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ideathon-Winning Project Framework</title> <!--  -->
+    <title>Ideathon-Winning Project Framework & Case Study</title>
     <style>
         body {
             min-height: 100vh;
@@ -17,6 +17,7 @@
             color: #f8fafc;
             margin: 0;
             padding: 40px 20px;
+            line-height: 1.6;
         }
         .container {
             max-width: 900px;
@@ -27,18 +28,19 @@
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
             border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 30px;
+            padding: 35px;
             border-radius: 20px;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
             margin-bottom: 30px;
         }
         h1 {
             text-align: center;
-            font-size: 32px;
+            font-size: 34px;
             background: linear-gradient(to right, #00c6ff, #0072ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
+            line-height: 1.3;
         }
         h2 {
             color: #38bdf8;
@@ -46,10 +48,29 @@
             border-bottom: 1px solid rgba(56, 189, 248, 0.3);
             padding-bottom: 10px;
             margin-top: 0;
+            margin-bottom: 20px;
         }
-        h3 { color: #4ade80; font-size: 18px; margin-bottom: 10px; }
-        ul { line-height: 1.6; color: #cbd5e1; padding-left: 20px; }
-        li { margin-bottom: 8px; }
+        h3 { 
+            color: #4ade80; 
+            font-size: 18px; 
+            margin-bottom: 10px; 
+        }
+        p {
+            color: #cbd5e1;
+            margin-bottom: 15px;
+            font-size: 15.5px;
+        }
+        ul { 
+            color: #cbd5e1; 
+            padding-left: 20px; 
+            margin-bottom: 20px;
+        }
+        li { 
+            margin-bottom: 10px; 
+            font-size: 15.5px;
+        }
+        
+        /* Grid and Steps styles (from old code) */
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -61,62 +82,127 @@
             border-radius: 12px;
             border-left: 4px solid #a855f7;
             margin-bottom: 15px;
+            color: #cbd5e1;
         }
-        .step-title { font-weight: bold; color: #a855f7; display: block; margin-bottom: 5px;}
+        .step-title { 
+            font-weight: bold; 
+            color: #a855f7; 
+            display: block; 
+            margin-bottom: 5px;
+        }
+
+        /* New Highlights and Table Styles */
+        .highlight-text {
+            color: #f472b6;
+            font-weight: 600;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        th {
+            background: rgba(56, 189, 248, 0.15);
+            color: #38bdf8;
+            font-weight: 600;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        tr:hover td {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        td:first-child {
+            font-weight: 600;
+            color: #a855f7;
+            width: 25%;
+        }
+
+        /* Diagram Container Styles */
+        .diagram-container {
+            width: 100%;
+            background: #ffffff; 
+            padding: 20px;
+            border-radius: 16px;
+            box-sizing: border-box;
+            margin: 25px 0;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .diagram-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        .section-divider {
+            margin: 60px 0 40px 0;
+            border-top: 1px dashed rgba(255,255,255,0.2);
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Ideathon-Winning Project Framework</h1> <!--  -->
+        
+        <h1>Ideathon-Winning Project Framework</h1>
         
         <div class="glass-card">
-            <h2>High-Impact Themes (case studies) for Cisco Ideathon 2026</h2> <!--  -->
+            <h2>High-Impact Themes (case studies) for Cisco Ideathon 2026</h2>
             <div class="grid-container">
                 <div>
-                    <h3>1. AI-Powered Smart Campus</h3> <!--  -->
+                    <h3>1. AI-Powered Smart Campus</h3>
                     <ul>
-                        <li>Occupancy Detection </li>
-                        <li>Smart Attendance </li>
-                        <li>Energy Optimization </li>
-                        <li>Predictive Maintenance </li>
-                        <li>Emergency Alerts </li>
+                        <li>Occupancy Detection</li>
+                        <li>Smart Attendance</li>
+                        <li>Energy Optimization</li>
+                        <li>Predictive Maintenance</li>
+                        <li>Emergency Alerts</li>
                     </ul>
                 </div>
                 <div>
-                    <h3>2. AI-Based Network Operations Centre</h3> <!--  -->
+                    <h3>2. AI-Based Network Operations Centre</h3>
                     <ul>
-                        <li><strong>Problem:</strong> Large campuses face frequent outages .</li>
-                        <li><strong>Solution:</strong> Network telemetry collection , AI anomaly detection , Root cause prediction , Automated ticket generation , Self-healing network actions .</li>
-                        <li><strong>Why Cisco likes it:</strong> Combines Networking , AI , Automation , and Security .</li>
+                        <li><strong>Problem:</strong> Large campuses face frequent outages.</li>
+                        <li><strong>Solution:</strong> Network telemetry collection, AI anomaly detection, Root cause prediction, Automated ticket generation, Self-healing network actions.</li>
+                        <li><strong>Why Cisco likes it:</strong> Combines Networking, AI, Automation, and Security.</li>
                     </ul>
                 </div>
                 <div>
-                    <h3>3. Smart Agriculture</h3> <!--  -->
+                    <h3>3. Smart Agriculture</h3>
                     <ul>
-                        <li>Soil moisture sensors </li>
-                        <li>AI irrigation prediction </li>
-                        <li>Water optimization </li>
-                        <li>Mobile alerts </li>
+                        <li>Soil moisture sensors</li>
+                        <li>AI irrigation prediction</li>
+                        <li>Water optimization</li>
+                        <li>Mobile alerts</li>
                     </ul>
                 </div>
                 <div>
-                    <h3>4. Smart Healthcare</h3> <!--  -->
+                    <h3>4. Smart Healthcare</h3>
                     <ul>
-                        <li>Remote patient monitoring </li>
-                        <li>Emergency detection </li>
-                        <li>Real-time dashboards </li>
-                        <li>AI-assisted diagnosis support </li>
+                        <li>Remote patient monitoring</li>
+                        <li>Emergency detection</li>
+                        <li>Real-time dashboards</li>
+                        <li>AI-assisted diagnosis support</li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div class="glass-card">
-            <h2>Structure your answer as:</h2> <!--  -->
+            <h2>Structure your answer as:</h2>
             
             <div class="step-box">
                 <span class="step-title">1. Problem Statement</span>
-                Current challenge. 
+                Current challenge.
             </div>
             
             <div class="step-box">
@@ -126,24 +212,118 @@
             
             <div class="step-box">
                 <span class="step-title">3. Technologies</span>
-                IoT Sensors , Cisco Networking , Edge Computing , AI/ML Models , Cloud Platform , Mobile App 
+                IoT Sensors, Cisco Networking, Edge Computing, AI/ML Models, Cloud Platform, Mobile App
             </div>
             
             <div class="step-box">
                 <span class="step-title">4. Security</span>
-                Encryption , VPN , Authentication , Zero Trust Access 
+                Encryption, VPN, Authentication, Zero Trust Access
             </div>
             
             <div class="step-box">
                 <span class="step-title">5. Business Impact</span>
-                Cost Reduction , Energy Savings , Better User Experience , Increased Safety 
+                Cost Reduction, Energy Savings, Better User Experience, Increased Safety
             </div>
             
             <div class="step-box">
                 <span class="step-title">6. Scalability</span>
-                Explain how solution can scale from one building to an entire city. 
+                Explain how solution can scale from one building to an entire city.
             </div>
         </div>
+
+        <div class="section-divider"></div>
+
+        <h1>AI-Based Network Operations Centre<br><span style="font-size: 22px; color: #94a3b8;">Detailed Case Study Solution</span></h1>
+
+        <div class="glass-card">
+            <h2>1. Problem Statement</h2>
+            <p>Large enterprise campuses and university networks run hundreds of switches, routers, and wireless access points simultaneously. Network teams today rely on reactive monitoring — they only discover an outage <em>after</em> it happens.</p>
+            <p>Mean time to detect (MTTD) can be 20–40 minutes, and mean time to resolve (MTTR) is even longer because engineers must manually SSH into devices, correlate logs, and raise tickets by hand. During this window, students lose exam access, hospital staff lose patient systems, and factories halt production lines.</p>
+        </div>
+
+        <div class="glass-card">
+            <h2>2. Proposed Architecture</h2>
+            <p>The pipeline flows in five stages:</p>
+            <p class="highlight-text" style="text-align: center; font-size: 18px; margin: 20px 0;">
+                Physical layer → Edge collector → AI engine → Automated actions → NOC dashboard
+            </p>
+            
+            <div class="diagram-container">
+                <img src="architecture-diagram.png" alt="AI-Based NOC Architecture Diagram showing Physical, Edge, AI Engine, Actions, and Dashboard layers">
+            </div>
+
+            <p>Raw telemetry (CPU spikes, interface errors, packet drops, BGP flaps) streams continuously from every network device using NETCONF/YANG and gRPC streaming telemetry into a Cisco Catalyst Center edge node.</p>
+            <p>The AI engine runs three parallel models: anomaly detection flags unusual baselines, a Graph Neural Network traces which upstream failure caused a downstream symptom (root cause prediction), and an LLM auto-drafts an incident ticket with a plain-English summary.</p>
+            <p>Once an issue is confirmed, RESTCONF APIs push a remediation config back to the device automatically — rerouting traffic, resetting a flapping interface, or escalating to a human if confidence is below threshold.</p>
+        </div>
+
+        <div class="glass-card">
+            <h2>3. Technologies</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Layer</th>
+                        <th>Technology</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>IoT / Network sensors</td>
+                        <td>Cisco Catalyst switches, Meraki APs, ASR routers with gRPC streaming</td>
+                    </tr>
+                    <tr>
+                        <td>Edge collector</td>
+                        <td>Cisco Catalyst Center, Telegraf, Apache Kafka</td>
+                    </tr>
+                    <tr>
+                        <td>AI / ML models</td>
+                        <td>Isolation Forest (anomaly), LSTM (time-series forecasting), GNN (root cause), fine-tuned LLM for ticket generation</td>
+                    </tr>
+                    <tr>
+                        <td>Cloud platform</td>
+                        <td>Cisco Intersight Cloud, AWS/Azure for model training and storage</td>
+                    </tr>
+                    <tr>
+                        <td>Dashboards</td>
+                        <td>Grafana, Cisco ThousandEyes, custom React UI with WebSocket live updates</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile app</td>
+                        <td>Cisco Webex mobile integration — push alerts with one-tap approve/reject for automated fixes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="glass-card">
+            <h2>4. Security</h2>
+            <ul>
+                <li>All telemetry data is encrypted in transit using <strong>TLS 1.3</strong>, and device credentials are vaulted in <strong>Cisco SecretManager / HashiCorp Vault</strong> — no hardcoded passwords in automation scripts.</li>
+                <li>Campus network segments are isolated with <strong>Cisco TrustSec</strong> (SGT-based microsegmentation) so a compromised IoT device cannot pivot to the core network.</li>
+                <li>All automated remediation actions require <strong>role-based authorisation</strong> (Zero Trust Access via Cisco Duo), and every action is immutably logged with a cryptographic audit trail.</li>
+                <li>Engineers must approve any action that affects more than 50 users via a <strong>Webex approval workflow</strong> before it executes.</li>
+            </ul>
+        </div>
+
+        <div class="glass-card">
+            <h2>5. Business Impact</h2>
+            <ul>
+                <li><span class="highlight-text">Cost reduction:</span> Automating Level-1 triage eliminates roughly 60–70% of manual NOC shifts. A 500-device campus that previously needed 3 night-shift engineers can operate with 1 on-call engineer plus the AI system.</li>
+                <li><span class="highlight-text">Energy savings:</span> The AI engine can detect underutilised switch stacks running at full power during off-hours and trigger Cisco EnergyWise policies to power them down, reducing campus network energy use by an estimated 15–25%.</li>
+                <li><span class="highlight-text">Better user experience:</span> MTTR drops from 35 minutes (industry average) to under 4 minutes for common failure patterns the model has seen before, because the fix is applied before most users even notice.</li>
+                <li><span class="highlight-text">Increased safety:</span> In a hospital campus, preventing even one 10-minute network outage per month protects critical patient monitoring systems and satisfies healthcare uptime SLA requirements.</li>
+            </ul>
+        </div>
+
+        <div class="glass-card">
+            <h2>6. Scalability</h2>
+            <ul>
+                <li><strong>Single building:</strong> Deploy one Cisco Catalyst Center node as the edge collector. The AI model runs locally on a Cisco UCS edge server. Handles up to ~200 devices.</li>
+                <li><strong>Multi-building campus:</strong> Add a Kafka message bus to fan out telemetry from multiple Catalyst Center clusters into a shared AI engine in a private cloud (Cisco Intersight). Horizontal scaling — add Kafka partitions, not new codebases.</li>
+                <li><strong>City / smart district:</strong> Deploy a hierarchical architecture — each campus has its own edge AI for local decisions (low latency), while a regional cloud AI layer aggregates patterns across all campuses to detect city-wide issues (e.g., a BGP route leak affecting all districts simultaneously). Cisco's DNA Center APIs remain the same at every tier, so the codebase scales without rewriting.</li>
+            </ul>
+        </div>
+        
     </div>
 </body>
 </html>
